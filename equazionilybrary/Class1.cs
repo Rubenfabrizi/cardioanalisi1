@@ -15,5 +15,10 @@ namespace equazionilybrary
             int freq =  220 - eta;
             return freq;
         }
+
+        public static int calcbattiti(int battiti)
+        {
+            int percentuale = 
+        }
     }
 }
