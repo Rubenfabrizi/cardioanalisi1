@@ -13,12 +13,42 @@ namespace equazionilybrary
         {
             
             int freq =  220 - eta;
+            
+            double battiti= freq*0.7;
+            double battiti1 = freq * 0.9;
+
+            double fmin = freq - battiti;
+
+            double fmax = freq - battiti1;
+        
+            
             return freq;
         }
 
-        public static int calcbattiti(int battiti)
+        public static string interpretaredati(int battiti)
         {
-            int percentuale = 
+            string msg = "";
+            if (battiti<60)
+            {
+                Console.WriteLine("bradicardia");
+            }
+            else
+            {
+
+                 if (battiti > 60 && battiti < 100)
+                 {
+                    Console.WriteLine("normale");
+                 }
+                 else
+                {
+                    Console.WriteLine("tachicardia");
+                }
+            }
+
+                return msg;
         }
+
+
+        
     }
 }

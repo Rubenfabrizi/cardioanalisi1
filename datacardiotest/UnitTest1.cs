@@ -12,6 +12,7 @@ namespace datacardiotest
         [DataRow(54, 166)]
         public void TestMethod1(int eta, int etaattesa)
         {
+
             
             int etarestituita = equazionilybrary.Class1.Calcfrecquenza(eta);
 
